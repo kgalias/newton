@@ -428,18 +428,6 @@ int main(int argc, char** argv) {
 				continue;	
 		}
 	}
-
-	///////////////////////////////////////////////////////////
-	//double(*)(double)
-	//vector<double> (*ptr1)(vector<double>) = &F;
-	/*shared_ptr< vector<double>(*)(vector<double>) > ptr_to_func = &F;
-	shared_ptr< matrix<double>*(vector<double>) > ptr_to_jac = &J;
-	shared_ptr< vector<double> > ptr_to_vec = &pt;
-	
-	vector<double> answw = newton(ptr_to_func.get(), ptr_to_jac.get(), ptr_to_vec.get());
-	cout << "newton passing smart pointers:" << endl;
-	for(auto a : answw) cout << a << " ";
-	cout << endl;*/
 	
 	return 0;
 }
